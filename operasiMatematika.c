@@ -195,7 +195,7 @@ void persegi(){
 			printf("|| ================================================== ||\n");
 			printf("||                   KELILING PERSEGI                 ||\n");
 			printf("|| ================================================== ||\n");
-			printf("|| Sisi Persegi : ");
+			printf("|| Panjang Sisi Persegi : ");
 			scanf("%f", &sisi);
 			printf("|| Keliling : %.2f \n", hitungKllPersegi(sisi));
 			printf("|| ================================================== ||\n");
@@ -205,7 +205,7 @@ void persegi(){
 			printf("|| ================================================== ||\n");
 			printf("||                      LUAS PERSEGI                  ||\n");
 			printf("|| ================================================== ||\n");
-			printf("|| Sisi Persegi");
+			printf("|| Panjang Sisi Persegi");
 			scanf("%f", &sisi);
 			printf("|| Luas : %.2f \n", hitungLuasPersegi(sisi));
 			printf("|| ================================================== ||\n");
@@ -289,7 +289,7 @@ void segiTiga(){
 			printf("|| ================================================== ||\n");
 			printf("||                     LUAS SEGITIGA                  ||\n");
 			printf("|| ================================================== ||\n");
-			printf("|| Alas : ");
+			printf("|| Panjang Alas : ");
 			scanf("%f", &alas);
 			printf("|| Tinggi : ");
 			scanf("%f", &tinggi);
@@ -357,7 +357,7 @@ void rumusKubus(){
 			printf("|| ================================================== ||\n");
 			printf("||                LUAS PERMUKAAN KUBUS                ||\n");
 			printf("|| ================================================== ||\n");	
-			printf("|| Panjang Rusuk Kubus(dalam cm) : ");
+			printf("|| Panjang Rusuk Kubus : ");
 			scanf("%f", &rusuk);
 			printf("|| Luas Permukaan = %.2f \n", hitungLuasPermukaanKubus(rusuk));
 			printf("|| ================================================== ||\n");	
@@ -367,7 +367,7 @@ void rumusKubus(){
 			printf("|| ================================================== ||\n");
 			printf("||                      VOLUME KUBUS                  ||\n");
 			printf("|| ================================================== ||\n");
-			printf("|| Panjang Rusuk Kubus(dalam cm) : ");
+			printf("|| Panjang Rusuk Kubus : ");
 			scanf("%f", &rusuk);
 			printf("|| Volume = %.2f \n", hitungVolumeKubus(rusuk));
 			printf("|| ================================================== ||\n");
@@ -395,11 +395,11 @@ void rumusBalok(){
 			printf("|| ================================================== ||\n");
 			printf("||                LUAS PERMUKAAN BALOK                ||\n");
 			printf("|| ================================================== ||\n");
-			printf("|| Panjang : ");
+			printf("|| Panjang Balok : ");
 			scanf("%f", &panjang);
-			printf("|| Lebar : ");
+			printf("|| Lebar Balok : ");
 			scanf("%f", &lebar);
-			printf("|| Tinggi : ");
+			printf("|| Tinggi Balok : ");
 			scanf("%f", &tinggi);
 			printf("|| Luas Permukaan = %.2f \n", hitungLuasPermukaanBalok(panjang, lebar, tinggi));
 			printf("|| ================================================== ||\n");
@@ -407,13 +407,13 @@ void rumusBalok(){
 			break;
 		case 2 :
 			printf("|| ================================================== ||\n");
-			printf("||                      VOLUME KUBUS                  ||\n");
+			printf("||                      VOLUME BALOK                  ||\n");
 			printf("|| ================================================== ||\n");
-			printf("|| Panjang : ");
+			printf("|| Panjang Balok : ");
 			scanf("%f", &panjang);
-			printf("|| Lebar : ");
+			printf("|| Lebar Balok : ");
 			scanf("%f", &lebar);
-			printf("|| Tinggi : ");
+			printf("|| Tinggi Balok : ");
 			scanf("%f", &tinggi);
 			printf("|| Volume = %.2f \n", hitungVolumeBalok(panjang, lebar, tinggi));
 			printf("|| ================================================== ||\n");
@@ -443,7 +443,7 @@ void rumusTabung(){
 			printf("|| ================================================== ||\n");
 			printf("|| Panjang Jari Jari Tabung: ");
 			scanf("%f", &r);
-			printf("|| Tinggi Balok : ");
+			printf("|| Tinggi Tabung : ");
 			scanf("%f", &tinggi);
 			printf("|| Luas Permukaan = %.2f \n", hitungLuasPermukaanTabung(r, tinggi));
 			printf("|| ================================================== ||\n");
@@ -455,7 +455,7 @@ void rumusTabung(){
 			printf("|| ================================================== ||\n");
 			printf("|| Panjang Jari Jari Tabung: ");
 			scanf("%f", &r);
-			printf("|| Tinggi Balok : ");
+			printf("|| Tinggi Tabung : ");
 			scanf("%f", &tinggi);	
 			printf("|| Volume = %.2f \n", hitungVolumeTabung(r, tinggi));
 			printf("|| ================================================== ||\n");
