@@ -312,7 +312,7 @@ void lingkaran(){
 	printf("|| ================================================== ||\n");
 	printf("|| 1. Keliling Lingkaran                              ||\n");
 	printf("|| 2. Luas Lingkaran                                  ||\n");
-	printf("|| Sisi Lingkaran : ");
+	printf("|| Pilih Salah Satu : ");
 	scanf("%d", &pilihLuasKll);
 	switch(pilihLuasKll){
 		case 1 :
