@@ -628,6 +628,7 @@ int main(){
 	return 0;
 }
 
+//PROSEDUR MENU
 void menu(){
 	int pilihanMenu;
 	printf("|| ================================================== ||\n");
@@ -678,7 +679,6 @@ void menu(){
 	}
 }
 
-//PROSEDUR MENU
 void menuBangunDatar(){
 	int pilihanBgnDatar;
 	printf("|| ================================================== ||\n");
