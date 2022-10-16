@@ -115,35 +115,48 @@ float hitungDrtGeoTakHingga(float a, float b){
 //MENU RUMUS
 void rumusKecepatan(){
 	float jarak, waktu;
-	printf("Jarak (dalam meter) : ");
+	printf("|| ================================================== ||\n");
+	printf("||                    RUMUS KECEPATAN                 ||\n");
+	printf("|| ================================================== ||\n");
+	printf("||Jarak (dalam meter) : ");
 	scanf("%f", &jarak);
-	printf("Waktu (dalam sekon) : ");
+	printf("||Waktu (dalam sekon) : ");
 	scanf("%f", &waktu);
-	printf("Kecepatan : %.2f m/s", hitungKecepatan(jarak, waktu));
+	printf("||Kecepatan : %.2f m/s\n", hitungKecepatan(jarak, waktu));
+	printf("|| ================================================== ||\n");
 	printf("\n\n");
 }
 
 void rumusDebit(){
 	int pilihanDik;
 	float luasPenampang, kecepatan, volume, waktu;
-	printf("1. Luas Penampang dan Kecepatan \n2. Volume dan Waktu \nApa yang diketahui? : ");
+	printf("|| ================================================== ||\n");
+	printf("||                 APA SAJA YANG DIKETAHUI?           ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Luas Penampang dan Kecepatan                    ||\n");
+	printf("|| 2. Volume dan Waktu                                ||\n");
+	printf("|| Pilih Salah Satu : ");
 	scanf("%d", &pilihanDik);
 
 	switch(pilihanDik){
 		case 1 :
-			printf("Luas Penampang : ");
+			printf("|| ================================================== ||\n");
+			printf("|| Luas Penampang : ");
 			scanf("%f", &luasPenampang);
-			printf("Kecepatan : ");
+			printf("|| Kecepatan : ");
 			scanf("%f", &kecepatan);
-			printf("Debit : %.2f", hitungDebit1(luasPenampang, kecepatan));
+			printf("|| Debit : %.2f \n", hitungDebit1(luasPenampang, kecepatan));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		case 2:
-			printf("Volume : ");
+			printf("|| ================================================== ||\n");
+			printf("|| Volume : ");
 			scanf("%f", &volume);
-			printf("Waktu : ");
+			printf("|| Waktu : ");
 			scanf("%f", &waktu);
-			printf("Debit : %.2f",hitungDebit2(volume, waktu));
+			printf("|| Debit : %.2f \n",hitungDebit2(volume, waktu));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		default :
@@ -155,30 +168,47 @@ void rumusDebit(){
 
 void rumusSkala(){
 	float jarakPadaPeta, jarakSebenarnya, skala;
-	printf("Jarak Pada Peta(dalam cm) : ");
+	printf("|| ================================================== ||\n");
+	printf("||                   KALKULATOR SKALA                 ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| Jarak Pada Peta(dalam cm) : ");	
 	scanf("%f", &jarakPadaPeta);
-	printf("Jarak Sebenarnya(dalam km) : ");
+	printf("|| Jarak Sebenarnya(dalam km) : ");
 	scanf("%f", &jarakSebenarnya);
-	printf("Skala = 1 : %.0f", hitungSkala(jarakSebenarnya, jarakPadaPeta));
+	printf("|| Skala = 1 : %.0f \n", hitungSkala(jarakSebenarnya, jarakPadaPeta));
+	printf("|| ================================================== ||\n");
 	printf("\n\n");
 }
 
 void persegi(){
 	int pilihLuasKll;
 	float sisi;
-	printf("1. Keliling \n2. Luas\n3. Pilih Operasi : ");
+	printf("|| ================================================== ||\n");
+	printf("||                        PERSEGI                     ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Keliling Persegi                                ||\n");
+	printf("|| 2. Luas Persegi                                    ||\n");
+	printf("|| Pilih Salah Satu : ");
 	scanf("%d", &pilihLuasKll);
 	switch(pilihLuasKll){
 		case 1 :
-			printf("Sisi Persegi : ");
+			printf("|| ================================================== ||\n");
+			printf("||                   KELILING PERSEGI                 ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Sisi Persegi : ");
 			scanf("%f", &sisi);
-			printf("Keliling : %.2f", hitungKllPersegi(sisi));
+			printf("|| Keliling : %.2f \n", hitungKllPersegi(sisi));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		case 2 :
-			printf("Sisi Persegi");
+			printf("|| ================================================== ||\n");
+			printf("||                      LUAS PERSEGI                  ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Sisi Persegi");
 			scanf("%f", &sisi);
-			printf("Luas : %.2f", hitungLuasPersegi(sisi));
+			printf("|| Luas : %.2f \n", hitungLuasPersegi(sisi));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		default :
@@ -191,23 +221,36 @@ void persegi(){
 void persegiPanjang(){
 	int pilihLuasKll;
 	float panjang, lebar;
-	printf("1. Keliling \n2. Luas\n3. Pilih Operasi : ");
+	printf("|| ================================================== ||\n");
+	printf("||                    PERSEGI PANJANG                 ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Keliling Persegi Panjang                        ||\n");
+	printf("|| 2. Luas Persegi Panjang                            ||\n");
+	printf("|| Pilih Salah Satu : ");
 	scanf("%d", &pilihLuasKll);
 	switch(pilihLuasKll){
 		case 1 :
-			printf("Panjang Persegi Panjang: ");
+			printf("|| ================================================== ||\n");
+			printf("||               KELILING PERSEGI PANJANG             ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang Persegi Panjang: ");
 			scanf("%f", &panjang);
-			printf("Lebar Persegi Panjang : ");
+			printf("|| Lebar Persegi Panjang : ");
 			scanf("%f", &lebar);
-			printf("Keliling : %.2f", hitungKllPersegiPanjang(panjang, lebar));
+			printf("|| Keliling : %.2f", hitungKllPersegiPanjang(panjang, lebar));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		case 2 :
-			printf("Panjang Persegi Panjang: ");
+			printf("|| ================================================== ||\n");
+			printf("||                 LUAS PERSEGI PANJANG               ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang Persegi Panjang : ");
 			scanf("%f", &panjang);
-			printf("Lebar Persegi Panjang : ");
+			printf("|| Lebar Persegi Panjang : ");
 			scanf("%f", &lebar);
-			printf("Luas : %.2f",hitungLuasPersegiPanjang(panjang, lebar));
+			printf("|| Luas : %.2f \n",hitungLuasPersegiPanjang(panjang, lebar));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		default :
@@ -220,25 +263,38 @@ void persegiPanjang(){
 void segiTiga(){
 	int pilihLuasKll;
 	float sisi1, sisi2, sisi3, alas, tinggi;
-	printf("1. Keliling \n2. Luas\n3. Pilih Operasi : ");
+	printf("|| ================================================== ||\n");
+	printf("||                       SEGI TIGA                    ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Keliling Segitiga                               ||\n");
+	printf("|| 2. Luas Segitiga                                   ||\n");
+	printf("|| Pilih Salah Satu : ");
 	scanf("%d", &pilihLuasKll);
 	switch(pilihLuasKll){
 		case 1 :
-			printf("Panjang Sisi 1 : ");
+			printf("|| ================================================== ||\n");
+			printf("||                   KELILING SEGITIGA                ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang Sisi 1 : ");
 			scanf("%f", &sisi1);
-			printf("Panjang Sisi 2 : ");
+			printf("|| Panjang Sisi 2 : ");
 			scanf("%f", &sisi2);
-			printf("Panjang Sisi 3 : ");
+			printf("|| Panjang Sisi 3 : ");
 			scanf("%f", &sisi3);
-			printf("Keliling : %.2f", hitungKllSegitiga(sisi1, sisi2, sisi3));
+			printf("|| Keliling : %.2f \n", hitungKllSegitiga(sisi1, sisi2, sisi3));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		case 2 :
-			printf("Alas : ");
+			printf("|| ================================================== ||\n");
+			printf("||                     LUAS SEGITIGA                  ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Alas : ");
 			scanf("%f", &alas);
-			printf("Tinggi : ");
+			printf("|| Tinggi : ");
 			scanf("%f", &tinggi);
-			printf("Luas : %.2f", hitungLuasSegitiga(alas, tinggi));
+			printf("|| Luas : %.2f \n", hitungLuasSegitiga(alas, tinggi));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		case 3 :
@@ -251,19 +307,32 @@ void segiTiga(){
 void lingkaran(){
 	float r;
 	int pilihLuasKll;
-	printf("1. Keliling \n2. Luas\nPilih Operasi : ");
+	printf("|| ================================================== ||\n");
+	printf("||                       LINGKARAN                    ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Keliling Lingkaran                              ||\n");
+	printf("|| 2. Luas Lingkaran                                  ||\n");
+	printf("|| Sisi Lingkaran : ");
 	scanf("%d", &pilihLuasKll);
 	switch(pilihLuasKll){
 		case 1 :
-			printf("Panjang Jari Jari Lingkaran : ");
+			printf("|| ================================================== ||\n");
+			printf("||                  KELILING LINGKARAN                ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang Jari Jari Lingkaran : ");
 			scanf("%f", &r);
-			printf("Keliling : %.2f", hitungKllLingkaran(r));
+			printf("|| Keliling : %.2f \n", hitungKllLingkaran(r));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		case 2 :
-			printf("Panjang Jari Jari Lingkaran : ");
+			printf("|| ================================================== ||\n");
+			printf("||                     LUAS LINGKARAN                 ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang Jari Jari Lingkaran : ");
 			scanf("%f", &r);
-			printf("Luas : %.2f", hitungLuasLingkaran(r));
+			printf("|| Luas : %.2f \n", hitungLuasLingkaran(r));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		default :
@@ -276,19 +345,32 @@ void lingkaran(){
 void rumusKubus(){
 	int pilihan;
 	float rusuk;
-	printf("1. Luas Permukaan \n2. Volume \nPilih Operasi : ");
+	printf("|| ================================================== ||\n");
+	printf("||                       KUBUS                        ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Luas Permukaan Kubus                            ||\n");
+	printf("|| 2. Volume Kerucut                                  ||\n");
+	printf("|| Pilih Salah Satu : ");
 	scanf("%d", &pilihan);
 	switch(pilihan){
 		case 1 :
-			printf("Panjang Rusuk Kubus(dalam cm) : ");
+			printf("|| ================================================== ||\n");
+			printf("||                LUAS PERMUKAAN KUBUS                ||\n");
+			printf("|| ================================================== ||\n");	
+			printf("|| Panjang Rusuk Kubus(dalam cm) : ");
 			scanf("%f", &rusuk);
-			printf("Luas Permukaan = %.2f", hitungLuasPermukaanKubus(rusuk));
+			printf("|| Luas Permukaan = %.2f \n", hitungLuasPermukaanKubus(rusuk));
+			printf("|| ================================================== ||\n");	
 			printf("\n\n");
 			break;
 		case 2 :
-			printf("Panjang Rusuk Kubus(dalam cm) : ");
+			printf("|| ================================================== ||\n");
+			printf("||                      VOLUME KUBUS                  ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang Rusuk Kubus(dalam cm) : ");
 			scanf("%f", &rusuk);
-			printf("Volume = %.2f", hitungVolumeKubus(rusuk));
+			printf("|| Volume = %.2f \n", hitungVolumeKubus(rusuk));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		default :
@@ -301,27 +383,40 @@ void rumusKubus(){
 void rumusBalok(){
 	int pilihan;
 	float panjang, lebar, tinggi;
-	printf("1. Luas Permukaan \n2. Volume \nPilih Operasi : ");
+	printf("|| ================================================== ||\n");
+	printf("||                       BALOK                        ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Luas Permukaan Balok                            ||\n");
+	printf("|| 2. Volume Balok                                    ||\n");
+	printf("|| Pilih Operasi : ");
 	scanf("%d", &pilihan);
 	switch(pilihan){
 		case 1 :
-			printf("Panjang : ");
+			printf("|| ================================================== ||\n");
+			printf("||                LUAS PERMUKAAN BALOK                ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang : ");
 			scanf("%f", &panjang);
-			printf("Lebar : ");
+			printf("|| Lebar : ");
 			scanf("%f", &lebar);
-			printf("Tinggi : ");
+			printf("|| Tinggi : ");
 			scanf("%f", &tinggi);
-			printf("Luas Permukaan = %.2f", hitungLuasPermukaanBalok(panjang, lebar, tinggi));
+			printf("|| Luas Permukaan = %.2f \n", hitungLuasPermukaanBalok(panjang, lebar, tinggi));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		case 2 :
-			printf("Panjang : ");
+			printf("|| ================================================== ||\n");
+			printf("||                      VOLUME KUBUS                  ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang : ");
 			scanf("%f", &panjang);
-			printf("Lebar : ");
+			printf("|| Lebar : ");
 			scanf("%f", &lebar);
-			printf("Tinggi : ");
+			printf("|| Tinggi : ");
 			scanf("%f", &tinggi);
-			printf("Volume = %.2f", hitungVolumeBalok(panjang, lebar, tinggi));
+			printf("|| Volume = %.2f \n", hitungVolumeBalok(panjang, lebar, tinggi));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		default	:
@@ -334,23 +429,36 @@ void rumusBalok(){
 void rumusTabung(){
 	int pilihan;
 	float r, tinggi;
-	printf("1. Luas Permukaan \n2. Volume \nPilih Operasi : ");
+	printf("|| ================================================== ||\n");
+	printf("||                       TABUNG                       ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Luas Permukaan Tabung                           ||\n");
+	printf("|| 2. Volume Tabung                                   ||\n");
+	printf("|| Pilih Operasi : ");
 	scanf("%d", &pilihan);
 	switch(pilihan){
 		case 1 :
-			printf("Panjang Jari Jari : ");
+			printf("|| ================================================== ||\n");
+			printf("||                LUAS PERMUKAAN TABUNG               ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang Jari Jari Tabung: ");
 			scanf("%f", &r);
-			printf("Tinggi Balok : ");
+			printf("|| Tinggi Balok : ");
 			scanf("%f", &tinggi);
-			printf("Luas Permukaan = %.2f", hitungLuasPermukaanTabung(r, tinggi));
+			printf("|| Luas Permukaan = %.2f \n", hitungLuasPermukaanTabung(r, tinggi));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		case 2 :
-			printf("Panjang Jari Jari : ");
+			printf("|| ================================================== ||\n");
+			printf("||                     VOLUME TABUNG                  ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang Jari Jari Tabung: ");
 			scanf("%f", &r);
-			printf("Tinggi Balok : ");
+			printf("|| Tinggi Balok : ");
 			scanf("%f", &tinggi);	
-			printf("Volume = %.2f", hitungVolumeTabung(r, tinggi));
+			printf("|| Volume = %.2f \n", hitungVolumeTabung(r, tinggi));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		default	:
@@ -364,23 +472,36 @@ void rumusKerucut(){
 	int pilihan;
 	float pi = 3.14;
 	float r, tinggi, garisPelukis;
-	printf("1. Luas Permukaan \n2. Volume \nPilih Operasi : ");
+	printf("|| ================================================== ||\n");
+	printf("||                       KERUCUT                      ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Luas Permukaan Kerucut                          ||\n");
+	printf("|| 2. Volume Kerucut                                  ||\n");
+	printf("|| Pilih Operasi : ");
 	scanf("%d", &pilihan);
 	switch(pilihan){
 		case 1 :
-			printf("Panjang Jari-Jari Kerucut : ");
+			printf("|| ================================================== ||\n");
+			printf("||                LUAS PERMUKAAN KERUCUT              ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang Jari-Jari Kerucut : ");
 			scanf("%f", &r);
-			printf("Panjang Garis Pelukis Kerucut : ");
+			printf("|| Panjang Garis Pelukis Kerucut : ");
 			scanf("%f", &garisPelukis);
-			printf("Luas Permukaan = %.2f", hitungLuasPermukaanKerucut(r, garisPelukis));
+			printf("|| Luas Permukaan = %.2f \n", hitungLuasPermukaanKerucut(r, garisPelukis));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		case 2 :
-			printf("Panjang Jari-Jari Kerucut : ");
+			printf("|| ================================================== ||\n");
+			printf("||                    VOLUME KERUCUT                  ||\n");
+			printf("|| ================================================== ||\n");
+			printf("|| Panjang Jari-Jari Kerucut : ");
 			scanf("%f", &r);
-			printf("Tinggi Kerucut : ");
+			printf("|| Tinggi Kerucut : ");
 			scanf("%f", &tinggi);
-			printf("Volume Kerucut = %.2f", hitungVolumeKerucut(r, tinggi));
+			printf("|| Volume Kerucut = %.2f \n", hitungVolumeKerucut(r, tinggi));
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
 		default :
@@ -393,80 +514,111 @@ void rumusKerucut(){
 void barisanAritmatika(){
 	float suku1, suku2, b;
 	int n;
-	printf("Suku pertama : ");
+	printf("|| ================================================== ||\n");
+	printf("||                   BARISAN ARITMATIKA               ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| Suku pertama : ");
 	scanf("%f", &suku1);
-	printf("Suku kedua : ");
+	printf("|| Suku kedua : ");
 	scanf("%f", &suku2);
-	printf("Cari nilai suku ke-berapa? : ");
+	printf("|| Cari nilai suku ke-berapa? : ");
 	scanf("%d", &n);
 	b = suku2 - suku1;
-	printf("Nilai suku ke-%d = %.2f", n, hitungBrsAritmatika(suku1, n, b));
+	printf("|| Nilai suku ke-%d = %.2f \n", n, hitungBrsAritmatika(suku1, n, b));
+	printf("|| ================================================== ||\n");
 	printf("\n\n");
 }
 
 void deretAritmatika(){
 	float suku1, suku2, b;
 	int batasDeret;
-	printf("Suku pertama : ");
+	printf("|| ================================================== ||\n");
+	printf("||                     DERET ARITMATIKA               ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| Suku pertama : ");
 	scanf("%f", &suku1);
-	printf("Suku kedua : ");
+	printf("|| Suku kedua : ");
 	scanf("%f", &suku2);
-	printf("Batas deret : ");
+	printf("|| Batas deret : ");
 	scanf("%d", &batasDeret);
 	b = suku2 - suku1;
-	printf("Jumlah deret aritmatika hingga suku ke-%d = %.2f", batasDeret, hitungDrtAritmatika(batasDeret, suku1, b));
+	printf("|| Jumlah deret aritmatika hingga suku ke-%d = %.2f \n", batasDeret, hitungDrtAritmatika(batasDeret, suku1, b));
+	printf("|| ================================================== ||\n");
 	printf("\n\n");
 }
 
 void barisanGeometri(){
 	float suku1, suku2, r;
 	int n;
-	printf("Suku pertama : ");
+	printf("|| ================================================== ||\n");
+	printf("||                    BARISAN GEOMETRI                ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| Suku pertama : ");
 	scanf("%f", &suku1);
-	printf("Suku kedua : ");
+	printf("|| Suku kedua : ");
 	scanf("%f", &suku2);
-	printf("Cari nilai suku ke-berapa? : ");
+	printf("|| Cari nilai suku ke-berapa? : ");
 	scanf("%d", &n);
 	r = suku2/suku1;
-	printf("Nilai suku ke-%d = %.2f", n, hitungBrsGeometri(suku1, r, n));
+	printf("|| Nilai suku ke-%d = %.2f \n", n, hitungBrsGeometri(suku1, r, n));
+	printf("|| ================================================== ||\n");
 	printf("\n\n");
 }
 
 void deretGeometri(){
 	float suku1, suku2, r;
 	int n;
-	printf("Suku pertama : ");
+	printf("|| ================================================== ||\n");
+	printf("||                      DERET GEOMETRI                ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| Suku pertama : ");
 	scanf("%f", &suku1);
-	printf("Suku kedua : ");
+	printf("|| Suku kedua : ");
 	scanf("%f", &suku2);
-	printf("Batas deret : ");
+	printf("|| Batas deret : ");
 	scanf("%d", &n);
 	r = suku2/suku1;
-	printf("Jumlah deret geometri hingga suku ke-%d = %.2f", n, hitungDrtGeometri(suku1, r, n));
+	printf("|| Jumlah deret geometri hingga suku ke-%d = %.2f \n", n, hitungDrtGeometri(suku1, r, n));
+	printf("|| ================================================== ||\n");
 	printf("\n\n");
 }
 
 void deretGeometriTakHingga(){
 	float suku1, suku2, r;
-	printf("Suku pertama : ");
+	printf("|| ================================================== ||\n");
+	printf("||               DERET GEOMETRI TAK HINGGA            ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| Suku pertama : ");
 	scanf("%f", &suku1);
-	printf("Suku kedua : ");
+	printf("|| Suku kedua : ");
 	scanf("%f", &suku2);
 	r = suku2/suku1;
-	printf("Jumlah deret geometri tak hingga nya adalah : %.2f", hitungDrtGeoTakHingga(suku1, r));
+	printf("|| Jumlah deret geometri tak hingga nya adalah : %.2f \n", hitungDrtGeoTakHingga(suku1, r));
+	printf("|| ================================================== ||\n");
 	printf("\n\n");
 }
 
 void cobaLagi(){
 	int pilihan;
-	printf("1. Iya \n2. Tidak \nIngin Bermain Lagi? : ");
+	printf("|| ================================================== ||\n");
+	printf("||                      COBA LAGI?                    ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Iya                                             ||\n");
+	printf("|| 2. Tidak                                           ||\n");
+	printf("|| Pilih Salah Satu : ");
 	scanf("%d", &pilihan);
 	switch(pilihan){
 		case 1 :
+			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			menu();
 			break;
 		case 2 :
+			printf("|| ================================================== ||\n");
+			printf("||                    TERIMA KASIH!                   ||\n");
+			printf("||                                                    ||\n");
+			printf("||                   by devtadanarsa                  ||\n");
+			printf("|| ================================================== ||\n");
 			break;	
 	}
 }
@@ -478,9 +630,19 @@ int main(){
 
 void menu(){
 	int pilihanMenu;
-	printf("1. Kecepatan \n2. Debit \n3. Skala \n4. Bangun Datar \n5. Bangun Ruang \n6. Barisan dan Deret Aritmatika \n7. Barisan dan Deret Geometri\n");
-	printf("Pilih salah satu : ");
+	printf("|| ================================================== ||\n");
+	printf("||                        MENU                        ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Kecepatan                                       ||\n");
+	printf("|| 2. Debit                                           ||\n");
+	printf("|| 3. Skala                                           ||\n");
+	printf("|| 4. Bangun Datar                                    ||\n");
+	printf("|| 5. Bangun Ruang                                    ||\n");
+	printf("|| 6. Barisan dan Deret Aritmatika                    ||\n");
+	printf("|| 7. Barisan dan Deret Geometri                      ||\n");
+	printf("|| Pilih salah satu : ");
 	scanf("%d", &pilihanMenu);
+	printf("|| ================================================== ||\n\n");
 	switch(pilihanMenu){
 		case 1 :
 			rumusKecepatan();
@@ -519,19 +681,30 @@ void menu(){
 //PROSEDUR MENU
 void menuBangunDatar(){
 	int pilihanBgnDatar;
-	printf("1. Persegi \n2. Persegi Panjang \n3. Segitiga \n4. Lingkaran \nPilih Bangun Datar : ");
+	printf("|| ================================================== ||\n");
+	printf("||                 KALKULATOR BANGUN DATAR            ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Persegi                                         ||\n");
+	printf("|| 2. Persegi Panjang                                 ||\n");
+	printf("|| 3. Segitiga                                        ||\n");
+	printf("|| 4. Lingkaran                                       ||\n");
+	printf("|| Pilih Salah Satu : ");
 	scanf("%d", &pilihanBgnDatar);
 	switch(pilihanBgnDatar){
 		case 1 :
+			printf("\n\n");
 			persegi();
 			break;
 		case 2 : 
+			printf("\n\n");
 			persegiPanjang();
 			break;
 		case 3 :
+			printf("\n\n");
 			segiTiga();
 			break;
 		case 4 : 
+			printf("\n\n");
 			lingkaran();
 			break;
 		default :
@@ -542,19 +715,30 @@ void menuBangunDatar(){
 
 void menuBangunRuang(){
 	int pilihanBgnRuang;
-	printf("1. Kubus \n2. Balok \n3. Tabung \n4. Kerucut\nPilih Bangun Ruang : ");
+	printf("|| ================================================== ||\n");
+	printf("||                 KALKULATOR BANGUN RUANG            ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Kubus                                           ||\n");
+	printf("|| 2. Balok                                           ||\n");
+	printf("|| 3. Tabung                                          ||\n");
+	printf("|| 4. Kerucut                                         ||\n");
+	printf("|| Pilih Salah Satu : ");
 	scanf("%d", &pilihanBgnRuang);
 	switch(pilihanBgnRuang){
 		case 1 :
+			printf("\n\n");
 			rumusKubus();
 			break;
-		case 2 : 
+		case 2 :
+			printf("\n\n"); 
 			rumusBalok();
 			break;
 		case 3 :
+			printf("\n\n");
 			rumusTabung();
 			break;
 		case 4 :
+			printf("\n\n");
 			rumusKerucut();
 			break;			
 		default :
@@ -565,7 +749,12 @@ void menuBangunRuang(){
 
 void menuAritmatika(){
 	int pilihan;
-	printf("1. Barisan Aritmatika \n2. Deret Aritmatika \nPilih Operasi : ");
+	printf("|| ================================================== ||\n");
+	printf("||              BARISAN DAN DERET ARITMATIKA          ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Barisan Aritmatika                              ||\n");
+	printf("|| 2. Deret Aritmatika                                ||\n");
+	printf("|| Pilih Salah Satu : ");
 	scanf("%d", &pilihan);
 	switch(pilihan){
 		case 1 :
@@ -582,7 +771,13 @@ void menuAritmatika(){
 
 void menuGeometri(){
 	int pilihan;
-	printf("1. Barisan Geometri \n2. Deret Geometri \n3. Deret Geometri Tak Hingga (Hanya jika 0 < rasio < 1) \nPilih Operasi : ");
+	printf("|| ================================================== ||\n");
+	printf("||               BARISAN DAN DERET GEOMETRI           ||\n");
+	printf("|| ================================================== ||\n");
+	printf("|| 1. Barisan Geometri                                ||\n");
+	printf("|| 2. Deret Geometri                                  ||\n");
+	printf("|| 3. Deret Geometri Tak Hingga(Hanya Jika 0 < r < 1) ||\n");
+	printf("|| Pilih Salah Satu : ");
 	scanf("%d", &pilihan);
 	switch(pilihan){
 		case 1 :
