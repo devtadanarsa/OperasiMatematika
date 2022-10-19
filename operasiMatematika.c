@@ -297,7 +297,7 @@ void segiTiga(){
 			printf("|| ================================================== ||\n");
 			printf("\n\n");
 			break;
-		case 3 :
+		default :
 			printf("Input anda salah, Ulangi Lagi!\n");
 			printf("\n\n");
 			segiTiga();	
@@ -619,7 +619,10 @@ void cobaLagi(){
 			printf("||                                                    ||\n");
 			printf("||                   by devtadanarsa                  ||\n");
 			printf("|| ================================================== ||\n");
-			break;	
+			break;
+		default :
+			printf("Input anda salah! Ulangi Lagi! \n\n");
+			cobaLagi();		
 	}
 }
 
@@ -674,7 +677,7 @@ void menu(){
 			cobaLagi();
 			break;		
 		default :
-			printf("Input anda salah, Ulangi Lagi!\n");
+			printf("Input anda salah, Ulangi Lagi!\n\n");
 			menu();
 	}
 }
@@ -708,7 +711,7 @@ void menuBangunDatar(){
 			lingkaran();
 			break;
 		default :
-			printf("Input anda salah!");
+			printf("Input anda salah!, Ulangi Lagi\n");
 			menuBangunDatar();
 	}
 }
@@ -742,7 +745,7 @@ void menuBangunRuang(){
 			rumusKerucut();
 			break;			
 		default :
-			printf("Input anda salah, Ulangi Lagi!\n");
+			printf("Input anda salah, Ulangi Lagi!\n\n");
 			menuBangunRuang();	
 	}
 }
@@ -764,7 +767,7 @@ void menuAritmatika(){
 			deretAritmatika();
 			break;
 		default :
-			printf("Input anda salah, Ulangi Lagi!\n");
+			printf("Input anda salah, Ulangi Lagi!\n\n");
 			menuAritmatika();	
 	}
 }
@@ -790,7 +793,7 @@ void menuGeometri(){
 			deretGeometriTakHingga();
 			break;
 		default :
-			printf("Input anda salah, Ulangi Lagi!\n");
+			printf("Input anda salah, Ulangi Lagi!\n\n");
 			menuGeometri();			
 	}
 }
